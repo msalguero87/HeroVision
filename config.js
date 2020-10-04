@@ -3,7 +3,7 @@
 var projectId = 'herovision';
 var bucketName = 'herovision';
 
-var credentialsApiKey = 'AIzaSyBB2MvQOYs4RFwZj60Do5eXO5pToLzsIps';
+var credentialsApiKey = '';
 
 module.exports = {
   port: process.env.PORT || 8080,
