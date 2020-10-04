@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hero Vision</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="/">Hero Vision</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="content">
+        <h3>Google Cloud Vision</h3>
+
+        
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <img src="vision.png" />
+            <h3 style="display: inline;">
+              Hero Vision
+            </h3>
+          </div>
+          <div id="panel-body" class="panel-body">
+            <p>
+              Is it a bird? Is it a plane? With Hero Vision you can identify if there's a superhero or a supervillain in any photo!
+            </p>
+            <form action="/" method="post" enctype="multipart/form-data">
+              <div class="form-group">
+                <label for="image">Image</label>
+                <input type="file" name="image" id="image" class="form-control">
+              </div>
+              
+              <div class="form-group">
+                <button type="submit" class="btn btn-success">Submit</button>
+              </div>  
+            </form>
+          </div>
+        </div>
+        
+        {?vision}
+          {#vision}
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3>
+                  {?isSuperHero}
+                  Is a Superhero!
+                {/isSuperHero}
+                {?notASuperHero}
+                  Not a Superhero!
+                {/notASuperHero}
+                {?isSuperVillain}
+                  Is a SuperVillain!
+                {/isSuperVillain}
+                </h3>
+              </div>
+              <div id="panel-body" class="panel-body">
+                <div class="row">
+                  <div class="col-md-6">
+                    <canvas id="panel-canvas" class="canvas"></canvas>
+                  </div>
+                  <div class="col-md-6" style="text-align: center;">
+                    {?colors}
+                      {#colors}
+                        <h4>Supersuit Colors:</h4>
+                        <canvas id="colors" width="200" height="200" ></canvas>
+                        <script>
+                          var canvas = document.getElementById("colors");
+                          var ctx = canvas.getContext("2d");
+                          var lastend = 0;
+                          var data = [
+                            {#values}
+                              {.},
+                            {/values}
+                          ]; 
+                          var total = 0;
+                          var myColor = [
+                            {#hex}
+                              '{.}',
+                            {/hex}
+                          ]; 
+
+                          for (var e = 0; e < data.length; e++) {
+                            total += data[e];
+                          }
+
+                          for (var i = 0; i < data.length; i++) {
+                            ctx.fillStyle = myColor[i];
+                            ctx.beginPath();
+                            ctx.moveTo(canvas.width / 2, canvas.height / 2);
+                            ctx.arc(canvas.width / 2, canvas.height / 2, canvas.height / 2, lastend, lastend + (Math.PI * 2 * (data[i] / total)), false);
+                            ctx.lineTo(canvas.width / 2, canvas.height / 2);
+                            ctx.fill();
+                            lastend += Math.PI * 2 * (data[i] / total);
+                          }
+                        </script>
+                      {/colors}
+                    {/colors}
+                  </div>
+                </div>
+                <script>
+                  initCanvas('{.imageUrl}', '{.response|s}');
+                </script>
+              </div>
+            </div>
+          {/vision}
+        {/vision}
+
+        {?error}
+          <div class="alert alert-danger" role="alert">{error}</div>
+        {/error}
+      </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  </body>
+</html>

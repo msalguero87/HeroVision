@@ -1,0 +1,18 @@
+{
+  "name": "herovision",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "adaro": "1.0.2",
+    "express": "4.13.4",
+    "gcloud": "0.27.0",
+    "googleapis": "2.1.7",
+    "lodash": "4.3.0",
+    "multer": "1.1.0",
+    "unirest": "0.4.2"
+  },
+  "engines": {
+    "node": ">=0.12.7"
+  }
+}

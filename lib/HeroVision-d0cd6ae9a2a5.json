@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "herovision",
+  "private_key_id": "d0cd6ae9a2a5c51ef532756b30235ebd8e5d0d25",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwqtxhNypGGmSY\na0iA5s6WK6U7nmRoTcIz8KWHaBtNZumb8KYyarp3SCJpj+c2F9kH/jnN5Dl5IOjG\nMMNOwWXql3sQffwNClhrQvCtXslyHdQUdYs0fJXDzlJBGzWTWxdvAsmASlQu24Ty\npv6QwT604Uv1mfPxdhexwsaZ0oIocGG2T7EXniDjKb/yckqts1lKAKEAfEybfWvC\npysvjp0MAPQahkFszHMTGyiFbUHLEJDhSxsizvdx6gBvx6fxXffJBDod3dwC1A08\nI9atVyvM2OrUSZBslIaNpGHfAUZPIOn6NeumGtG/t1eYohwKDi9ZcF3L4OVoInLL\n2OwwQjGNAgMBAAECggEACmPcwYGWDzi+0Sarb/FNwGU2ut044y2COL3JbmpAA3sE\nTYiHWGW7K7K8BgtRj3aIQWvBMzZd7vLG3d5ro3Zvq66sV9mg+OoH2Im/pTfy5FmU\nFH6ek5VUKtzigjO7IJHLPLB5m1Lub9xh4vImp0Abk6sVuuRgBW5q5v3L4lYQE5gC\nDNBHS7cDYOTQQvGKPWBbuaGmh0eoZyc2mRmYHE6yi1+urVXOj8bem7yrCxuvA9aJ\nKiZeG2r87NJVHHCjnib3Okq5rJPRJgWaqa+s3fnCxaw+sE/7rGvQ3qOqNa9zjVyo\n/VfCeSM2Sr3tAYHcrd+a315zLeIIHnZhxni3Rs1U3QKBgQDefkUoUZzyp0z2IM8Z\na5ctfgBgZfkWVf3t/EeXwQg6gZL9V7KzVCsuqvrwg4dZPwCfu4h/KF2NlYqNRgNZ\nFfTvS2YwwYO5KE0khd+SxvTAF3oYmRFJHfF+JYbFrzCW8EIyftX+mRX1SXA4Cp//\nOznOabZzqAI6q4B+BVcBTUE6xwKBgQDLReDy6Tr1bgpGXsSzFx6ZhXYikJTmg95a\nkwTVewvrKM0SeofYM/GWD7+YFf8vAUE5eevy70dCVQnihKqZouS5UxcexZIwi+z+\nUrRjOn7MXPzws+FWW31U+ruWB+XbWimMHDxFdgaak+LZAun9edEebkyH4npDiJfu\n6wypL7L9CwKBgB1oJw/bKZlQz3VAhN7hP4v9uWMEV1XCa9uGmpfOJZ5F/f2KF85n\n84UpiB095SfAkf6KtNHJrgPGnhdqB4tAwazXFFyhVx2j2/5Vy2UE8thowfR6VrSJ\nRp/bqeJ68zsf6j/uT65k4WgYGsLtdJQxacSEaF8E97Z1cHg3kHZVlaeFAoGBAJhv\nDKPcluQZ4wamZqdOfRnvZYnCFodO+F2/xm442dU9QZvL2zccrNw1bx4j0Lt1G254\nqaICIdPyZXlCt5SC/Takwr/GtTxGkjCd4LxQz2l9igkPO7pA3ZnudOGrhomZ8XIq\ncmA8g/NDV2gZsVLuGQ3S9P0przoZoqX+Cf6N0JHFAoGAcGKM2B85+Ho7TpEwgpOk\nvd+FkGomWMqirigVrT7bOTEHjTpKyhrIZDIoDN7SRcOiEX9fq0m/koKZGBbo2A5S\nVsLAEsEr8GcZQ9+W2VpvQEA8mf45WoNpr4l9gKb8attBpP217O6g8EzIl0Byihlk\nUHDU7qYI11omBKLZtD4U1hE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "herovision@herovision.iam.gserviceaccount.com",
+  "client_id": "105999981695493049048",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/herovision%40herovision.iam.gserviceaccount.com"
+}
